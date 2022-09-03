@@ -1,11 +1,12 @@
 {
-  "name": "create-die-sache-react-app",
+  "name": "@die-sache/create-die-sache-react-app",
   "version": "1.0.0",
   "description": "Starter für die-sache react apps",
+  "bin": "./bin/create.js",
   "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server --mode=development --open --hot",
-    "build": "webpack --mode=production",
+    "build": "webpack --mode=production"
   },
   "author": "OmegaPirat",
   "license": "ISC",
