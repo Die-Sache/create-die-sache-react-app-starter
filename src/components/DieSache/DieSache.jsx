@@ -40,7 +40,8 @@ const Description = styled.footer`
     `;
 
 function pickFlagColor(black, red, gold) {
-    if (black && !(red || gold)) return 'black';if (red && !(black || gold)) return 'red';
+    if (black && !(red || gold)) return 'black';
+    if (red && !(black || gold)) return 'red';
     if (gold && !(red || black)) return 'yellow;'
     throw new Error("Invalid color for German flag");
 }
@@ -61,7 +62,7 @@ export default function () {
             <GermanFlagPart gold>
                 <Description>
                     Entwickel deine App für den Widerstand! <br/>
-                    Finde weitere Informationen zu den Entwicklungsguidlines auf <br/>
+                    Finde weitere Informationen zu den Entwicklungsguidelines auf <br/>
                     <a href="https://github.com/Die-Sache/create-die-sache-react-app-starter/blob/main/README.md">
                         GitHub
                     </a>

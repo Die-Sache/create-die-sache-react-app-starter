@@ -1,6 +1,6 @@
 {
   "name": "@die-sache/create-react-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "description": "Starter für die-sache react apps",
   "bin": "./bin/create.js",
