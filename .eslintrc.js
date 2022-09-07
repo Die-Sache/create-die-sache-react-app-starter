@@ -4,18 +4,22 @@ module.exports = {
     es2021: true
   },
   extends: [
-    'plugin:react/recommended',
-    'standard'
+    'plugin:react/recommended'
   ],
   overrides: [
   ],
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true
+    }
   },
   plugins: [
     'react'
   ],
   rules: {
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error'
   }
 }
