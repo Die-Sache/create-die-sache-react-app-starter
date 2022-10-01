@@ -1,4 +1,3 @@
-import React from 'react';
 import sache from '../../assets/sache.jpg';
 import styled from "styled-components";
 

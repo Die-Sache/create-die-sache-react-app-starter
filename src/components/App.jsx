@@ -1,4 +1,3 @@
-import React from 'react';
 import DieSache from "./DieSache/DieSache.jsx";
 import styled from "styled-components";
 
