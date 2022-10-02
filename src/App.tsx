@@ -1,4 +1,4 @@
-import DieSache from './DieSache'
+import DieSache from './components/DieSache'
 import styled from 'styled-components'
 
 const AppWrapper = styled.div`
