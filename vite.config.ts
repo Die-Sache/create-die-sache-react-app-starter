@@ -1,8 +1,8 @@
-import { defineConfig } from "vite";
+import {defineConfig, UserConfig} from "vite";
 import react from "@vitejs/plugin-react";
 import zipPack from "vite-plugin-zip-pack";
 
-export default ({ mode }) => {
+const viteConfig = ({ mode }: UserConfig) => {
     return defineConfig({
         plugins: [react(), zipPack()],
         define: {
@@ -10,3 +10,5 @@ export default ({ mode }) => {
         }
     })
 }
+
+export default  viteConfig;
