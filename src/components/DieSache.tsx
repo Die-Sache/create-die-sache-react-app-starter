@@ -1,5 +1,5 @@
-import sache from '../assets/sache.jpg'
-import styled from 'styled-components'
+import sache from '../assets/sache.jpg';
+import styled from 'styled-components';
 
 interface GermanFlagParts {
   readonly top?: boolean
@@ -12,7 +12,7 @@ const DieSache = styled.div`
       flex-direction: column;
       height: 100%;
       font-size: 16px;
-    `
+    `;
 
 const GermanFlagPart = styled.div<GermanFlagParts>`
       display: flex;
@@ -22,33 +22,33 @@ const GermanFlagPart = styled.div<GermanFlagParts>`
       justify-content: center;
       align-items: center;
       background-color: ${({ top, middle, bottom }) => pickFlagColor(top, middle, bottom)};
-    `
+    `;
 
 const Image = styled.img`
       height: 100%;
-    `
+    `;
 
 const EmphasizedText = styled.em`
       font-size: 200%;
       font-weight: bold;
-    `
+    `;
 
 const Welcome = styled.header`
       text-align: center;
       color: white;
       font-size: 200%;
-    `
+    `;
 
 const Description = styled.footer`
       text-align: center;
       font-size: 200%;
-    `
+    `;
 
 function pickFlagColor (top: boolean = false, middle: boolean = false, bottom: boolean = false): string {
-  if (top && !(middle ?? bottom)) return 'black'
-  if (middle && !(top ?? bottom)) return 'red'
-  if (bottom && !(middle ?? top)) return 'yellow;'
-  throw new Error('Invalid color for German flag')
+  if (top && !(middle ?? bottom)) return 'black';
+  if (middle && !(top ?? bottom)) return 'red';
+  if (bottom && !(middle ?? top)) return 'yellow;';
+  throw new Error('Invalid color for German flag');
 }
 
 const DieSachePage = (): JSX.Element => {
@@ -74,7 +74,7 @@ const DieSachePage = (): JSX.Element => {
                 </Description>
             </GermanFlagPart>
         </DieSache>
-  )
-}
+  );
+};
 
-export default DieSachePage
+export default DieSachePage;
